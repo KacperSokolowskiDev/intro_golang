@@ -10,7 +10,6 @@ func change_value(val int) { // the value won't change outside of the scope of t
 // "*int" -> integer pointer, the value will 
 //change even outside the scope of this func because we change it from it's memory address not the value
 func change_ref(val *int) { 
-
 	*val = 500
 	fmt.Println(*val)
 } 
